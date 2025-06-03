@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Backend API URL for all server requests
-const API_URL = 'http://localhost:3001/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
 
 /**
  * Main App component that manages the banking application
